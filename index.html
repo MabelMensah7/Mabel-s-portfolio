@@ -1,103 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mabel's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mabel Mensah | Backend Web Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <img src="media/portfolio picture.jpeg" alt="Mabel Mensah" class="profile-pic">
-        <h1>Hi, I am Mabel Mensah</h1>
-        <p>Web Developer & Research Enthusiast</p>
+
+<main class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="media/Portfolio profile.jpeg" alt="Mabel Mensah" class="profile-pic">
+
+        <div class="intro">
+            <h1>Hi, I am Mabel Mensah</h1>
+            <h2>Web Developer | Public Health Enthusiast</h2>
+        </div>
     </header>
 
-    <!--About Me-->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a web developer currently training at MEST Africa, with a growing focus on backend development using Python. My journey combines customer service and digital literacy, giving me a unique perspective on building user-friendly digital solutions. I am passionate about creating clean, functional websites and applications while continuously improving my skills in HTML, CSS, JavaScript, and databases. My long-term goal is to contribute to impactful projects that merge technology with real-world problem solving.</p>
+    <!-- ABOUT -->
+    <section>
+        <h3>About</h3>
+        <p>
+            I am a backend web developer trained at MEST Africa, with hands-on experience
+            building APIs, backend logic, and database-driven applications. I have a strong 
+            foundation in Python, FastAPI, and modern web technologies and also experience building 
+            REST APIs, managing databases, and collaborating on real-world production systems.
+            My background in customer service strengthens my ability to build
+            user-focused and reliable systems.
+        </p>
     </section>
 
-    <!--Skills-->
-    <section class="skills">
-        <h2>Skills Showcase</h2>
-        <ul>
-            <li><strong>Languages & Tools:</strong> Python, HTML, CSS, JavaScript, Git/GitHub</li>
-            <li><strong>Other Skills:</strong> Customer engagement, teamwork, problem-solving, digital literacy, project collaboration</li>
+    <!-- SKILLS -->
+    <section>
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>REST APIs</li>
+            <li>MongoDB</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
         </ul>
     </section>
 
-    <!--Experience-->
-    <section class="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Customer Service Advisor</h3> 
-            <p><em>Concentrix | May 2025 - July 2025</em></p>
+    <!-- EXPERIENCE -->
+    <section>
+        <h3>Experience</h3>
+
+        <div class="experience-item">
+            <h4>Junior Web Developer — Astra Creatives</h4>
+            <span>Dec 2025 – Present</span>
             <ul>
-                <li>Provided front-line support and resolved customer inquiries using CRM tools.</li>
-                <li>Developed strong problem-solving and communication skills relevant to tech support.</li>
-                <li>Enhanced adaptability and multitasking in a fast-paced digital environment.</li>
+                <li>Develop backend systems for esports platforms using Python and FastAPI.</li>
+                <li>Build and maintain REST APIs and MongoDB databases.</li>
+                <li>Worked closely with the Head Engineer on the Astra Creatives website.</li>
             </ul>
         </div>
 
-        <div class="job">
-            <h3>Virtual Assistant Trainee</h3> 
-            <p><em>ALX | Aug 2024 - Oct 2024</em></p>
+        <div class="experience-item">
+            <h4>Customer Service Advisor — Concentrix</h4>
+            <span>May 2025 – Jul 2025</span>
             <ul>
-                <li>Trained in remote work tools, digital communication, and online productivity systems.</li>
-                <li>Developed organizational and task management skills for collaborative environments.</li>
+                <li>Handled high-volume customer inquiries using CRM tools.</li>
+                <li>Strengthened communication, multitasking, and problem-solving skills.</li>
             </ul>
-        </div>    
-    </section>
+        </div>
 
-    <!--Projects-->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-
-            <!-- Portfolio Project -->
-            <div class="project">
-                <a href="https://mabelmensah.netlify.app/" target="_blank">
-                    <img src="media/projects/portfolio project picture.jpeg" alt="Portfolio Project Thumbnail">
-                </a>
-                <h3>Mabel's Professional Portfolio</h3>
-                <p>A clean, responsive web portfolio showcasing skills, experience, and projects. Built using HTML, CSS, and JavaScript.</p>
-            </div>
-
-            <!-- Calculator Project -->
-            <div class="project">
-                <a href="https://a-calculator-project.onrender.com" target="_blank">
-                    <img src="media/projects/Calculator thumbnail.jpeg" alt="Calculator Project Thumbnail">
-                </a>
-                <h3>Python Calculator</h3>
-                <p>A beginner-friendly, interactive calculator built with FastAPI and Python. Supports add, subtract, multiply, divide with clean UI.</p>
-            </div>
-
-            <!-- Lottery Game Project -->
-            <div class="project">
-                <a href="https://a-lottery-fastapi.onrender.com" target="_blank">
-                    <img src="media/projects/Lottery Game thumbnail.jpeg" alt="Lottery Game">
-                </a>
-                <h3>Lottery Game</h3>
-                <p>A beginner-friendly web app using Python and FastAPI simulating Ghana’s NLA lottery. Users pick 5 lucky numbers and check matches with prize display.</p>
-            </div>
-
+        <div class="experience-item">
+            <h4>Virtual Assistant Trainee — ALX</h4>
+            <span>Aug 2024 – Oct 2024</span>
+            <ul>
+                <li>Trained in digital administration, communication tools, and remote workflows.</li>
+            </ul>
         </div>
     </section>
 
-    <!--Contact-->
+    <!-- PROJECTS -->
+    <section>
+        <h3>Projects</h3>
+
+        <div class="project">
+            <img src="media/projects/gug.jpeg" alt="GUG Kitchenwares">
+            <div>
+                <h4>GUG Kitchenwares & Plastics</h4>
+                <p>
+                    Backend development for an e-commerce platform using FastAPI and MongoDB.
+                    Implemented product management and order logic.
+                </p>
+                <a href="#" target="_blank">View Project →</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="media/projects/jmc.jpeg" alt="Japan Medical Center">
+            <div>
+                <h4>Japan Medical Center</h4>
+                <p>
+                    Backend APIs for managing patient records and appointments,
+                    focusing on clean architecture and data handling.
+                </p>
+                <a href="#" target="_blank">View Project →</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="media/projects/group work.jpeg" alt="E-learning Platform">
+            <div>
+                <h4>Career Grooming Agency Platform</h4>
+                <p>
+                    Group project (K2VsMan) simulating a digital learning platform with courses,
+                    quizzes, and user management features(Backend-focused)
+                </p>
+                <a href="https://career-grooming-agency-api.onrender.com/docs" target="_blank">View Project →</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="media/projects/astra creatives.jpeg" alt="Astra Creatives">
+            <div>
+                <h4>Astra Creatives Website</h4>
+                <p>
+                    Collaborated with the Head Engineer to develop and maintain
+                    the Astra Creatives website.
+                </p>
+                <a href="https://astracreativesghana.org/" target="_blank">Visit Site →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact">
-        <h2>Contact Me</h2>
-        <p><a href="mailto:mabelmensah515@gmail.com"><img src="media/contacticons/email.png" alt="Email Icon"> Email</a></p>
-        <p><a href="http://linkedin.com/in/mabelxmensah" target="_blank"><img src="media/contacticons/linkedin (1).png" alt="LinkedIn Icon"> LinkedIn</a></p>
-        <p><a href="https://github.com/mabelmensah7" target="_blank"><img src="media/contacticons/github.png" alt="GitHub Icon"> GitHub</a></p>
-        <p><a href="resumeholder/MabelMensah_CV.pdf"><img src="media/contacticons/resume.png" alt="Resume Icon"> Download Resume</a></p>
+        <h3>Contact</h3>
+        <div class="contact-icons">
+            <a href="mailto:mabelmensah515@gmail.com"><img src="media/contacticons/email.png"></a>
+            <a href="https://linkedin.com/in/mabelxmensah" target="_blank"><img src="media/contacticons/linkedin (1).png"></a>
+            <a href="https://github.com/mabelmensah7" target="_blank"><img src="media/contacticons/github.png"></a>
+            <a href="resumeholder/MABEL MENSAH_WD.pdf" target="_blank"><img src="media/contacticons/resume.png"></a>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 Mabel. All Rights Reserved.</p>
-    </footer>
+</main>
+
+<footer>
+    © 2026 Mabel Mensah
+</footer>
+
 </body>
 </html>
